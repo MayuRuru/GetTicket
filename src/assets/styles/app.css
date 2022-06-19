@@ -1,0 +1,28 @@
+@import url(ticketCard.css);
+@import url(app.css);
+@import url(home.css);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*fonts:*/
+@font-face {
+  font-family: title;
+  src: url(../fonts/The\ Bernardo.ttf);
+}
+
+@font-face {
+  font-family: text;
+  src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
+}
+
+@font-face {
+  font-family: footer;
+  src: url(../fonts/Louis\ George\ Cafe\ Bold\ Italic.ttf);
+}
+
+#h1 {
+  font-family: title;
+}
