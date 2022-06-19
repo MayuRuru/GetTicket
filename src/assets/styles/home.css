@@ -1,3 +1,45 @@
+.main_image {
+  width: 50vw;
+}
+
+.title {
+  font-family: title;
+  font-size: 3rem;
+}
+
 .main_container {
-  border: red 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.head_container {
+  margin: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.table_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+table {
+  width: 80%;
+  height: 10%;
+}
+
+th {
+  border-bottom: 1px solid black;
+  font-family: footer;
+}
+
+td {
+  text-align: center;
+  font-family: text;
+}
+
+.total .p {
+  font-family: footer;
 }

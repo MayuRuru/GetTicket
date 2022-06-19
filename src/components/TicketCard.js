@@ -1,13 +1,22 @@
 import "../assets/styles/ticketCard.css";
 
-const TicketCard = ({ product, type, quantity, unitPrice }) => {
+const TicketCard = ({ tickets }) => {
   return (
-    <div className="card_container">
-      <h2>{product}</h2>
-      <h4>{type}</h4>
-      <h4>{quantity}</h4>
-      <h4>{unitPrice}</h4>
-    </div>
+    <table className="card_container">
+      <tr>
+        <th className="text">{tickets.product}</th>
+      </tr>
+
+      {tickets.map((tickets, key) => {
+        return (
+          <tr key={key}>
+            <td className="text">{tickets.type}</td>
+            <td className="text">{tickets.quantity}</td>
+            <td className="text">{tickets.unitPrice}</td>
+          </tr>
+        );
+      })}
+    </table>
   );
 };
 

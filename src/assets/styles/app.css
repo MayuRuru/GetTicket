@@ -1,5 +1,4 @@
 @import url(ticketCard.css);
-@import url(app.css);
 @import url(home.css);
 
 * {
@@ -10,17 +9,17 @@
 /*fonts:*/
 @font-face {
   font-family: title;
-  src: url(../fonts/The\ Bernardo.ttf);
+  src: url("../fonts/Bernardo.ttf");
 }
 
 @font-face {
   font-family: text;
-  src: url(../fonts/Louis\ George\ Cafe\ Light.ttf);
+  src: url("../fonts/Cafe-Light.ttf");
 }
 
 @font-face {
   font-family: footer;
-  src: url(../fonts/Louis\ George\ Cafe\ Bold\ Italic.ttf);
+  src: url("../fonts/Cafe-Bold-Italic.ttf");
 }
 
 #h1 {
