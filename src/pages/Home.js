@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import TicketCard from "../components/TicketCard";
-import { getTickets } from "../Service";
+import { getTickets, Total } from "../Service";
 import "../assets/styles/home.css";
 
 const Home = () => {
@@ -29,27 +29,29 @@ const Home = () => {
 
       <div className="table_container">
         <table>
-          <tr>
-            <th>Product</th>
-            <th>Type</th>
-            <th>Quantity</th>
-            <th>unitPrice</th>
-          </tr>
-          {tickets.map((tickets) => {
-            return (
-              <>
-                <tr>
-                  <td>{tickets.product}</td>
-                  <td>{tickets.type}</td>
-                  <td>{tickets.quantity}</td>
-                  <td>{tickets.unitPrice}</td>
-                </tr>
-              </>
-            );
-          })}
-          <div className="total">
-            <p>Total is:</p>
-          </div>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Type</th>
+              <th>Quantity</th>
+              <th>unitPrice</th>
+            </tr>
+          </thead>
+          <tbody>
+            {tickets.map(({ id, product, type, quantity, unitPrice }) => (
+              <TicketCard
+                key={id}
+                product={product}
+                type={type}
+                quantity={quantity}
+                unitPrice={unitPrice}
+              />
+            ))}
+
+            <tr className="total">
+              <td>Total is:{Total()}</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
@@ -57,16 +59,3 @@ const Home = () => {
 };
 
 export default Home;
-
-/* 
-<div className="main_container">
-{tickets.map(({ id, product, type, quantity, unitPrice }) => (
-  <TicketCard
-    key={id}
-    product={product}
-    type={type}
-    quantity={quantity}
-    unitPrice={unitPrice}
-  />
-))}
-</div> */
