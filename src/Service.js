@@ -9,7 +9,6 @@ export async function getTickets() {
 
 export function Total() {
   const [tickets, setTickets] = useState([]);
-  //const [total, setTotal] = useState();
 
   useEffect(() => {
     getTickets().then((res) => {
@@ -22,6 +21,5 @@ export function Total() {
     return (total += quantity * unitPrice);
   });
 
-  console.log(total);
   return total;
 }
