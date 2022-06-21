@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <div className="main_container">
       <div className="head_container">
-        <h1 className="title">Bon appetit!</h1>
+        <h1 className="title">Bon appetit</h1>
         <img
           className="main_image"
           src={require("../assets/images/restaurant.png")}
@@ -47,12 +47,11 @@ const Home = () => {
                 unitPrice={unitPrice}
               />
             ))}
-
-            <tr className="total">
-              <td>Total is:{Total()}</td>
-            </tr>
           </tbody>
         </table>
+        <tr className="total">
+          <td>Total is: {Total()}$</td>
+        </tr>
       </div>
     </div>
   );

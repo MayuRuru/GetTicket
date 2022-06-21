@@ -1,4 +1,11 @@
-.text {
+td {
   font-family: text;
   font-size: 1.5rem;
+  padding: 0.2rem;
+}
+
+@media screen and (max-width: 680px) {
+  td {
+    font-size: 1rem;
+  }
 }
