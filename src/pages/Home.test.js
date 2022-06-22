@@ -1,9 +1,5 @@
-import { shallow, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Home from "./Home";
-
-it.skip("renders without crashing", () => {
-  shallow(<Home />);
-});
 
 test("it should display a title", () => {
   render(<Home />);
