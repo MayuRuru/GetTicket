@@ -2,7 +2,7 @@
 
 MVP for displaying the items of a restaurant ticket and its total price.
 
-This project uses React to further escalate components and to continue watching a mocked API that could easy relate to a server database.
+This project uses React to further escalate components and to continue watching a mocked API that could easy relate to a server database. It has a simple responsive design in CSS.
 
 You can acces the [db.json](https://github.com/MayuRuru/GetTicket/blob/main/src/assets/data/db.json) file and add new items and you will see how the total price increases!
 
