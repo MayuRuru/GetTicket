@@ -29,4 +29,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 ### Next steps:
 
 - Testing all components and API rendering
-- Adding UX/UI functionalities such as CRUD functions to edit, add or delete items from the ticket
+- Adding UX/UI such as CRUD functionalities to edit, add or delete items from the ticket
